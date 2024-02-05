@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
@@ -19,10 +19,9 @@ body {
   position: relative;
   width: 340px;
   padding: 20px;
-  
+
   border-radius: 20px;
-  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
-             -15px -15px 20px #fffb;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
 }
 
 .calculator .buttons {
@@ -33,7 +32,7 @@ body {
 .calculator .buttons #value {
   position: relative;
   grid-column: span 4;
-  
+
   user-select: none;
   overflow: none;
 
@@ -43,8 +42,7 @@ body {
   text-align: end;
 
   color: #5166d6;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
-              inset -5px -5px 20px #fff;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #fff;
   border-radius: 10px;
 
   margin-bottom: 12px;
@@ -52,4 +50,29 @@ body {
 
   font-size: 2em;
   font-weight: 500;
+}
+
+.calculator .buttons span {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+
+  cursor: pointer;
+  user-select: none;
+
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2em;
+  color: black;
+
+  border: 2px solid #edf1f4;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px #fff;
+  border-radius: 10px;
+}
+
+.calculator .buttons span:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #fff;
 }
