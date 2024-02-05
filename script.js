@@ -10,6 +10,8 @@ let value = document.getElementById('value')
       }   else {
             if(this.innerHTML=="clear"){
              value.innerHTML = ""; 
+            } else {
+                value.innerHTML += this.innerHTML;
             }
       }
 
