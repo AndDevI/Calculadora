@@ -76,3 +76,21 @@ body {
 .calculator .buttons span:active {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #fff;
 }
+
+.calculator .buttons span#clear {
+  grid-column: span 2;
+  background: rgb(255, 56, 56);
+  color: white;
+}
+
+.calculator .buttons span#plus {
+  grid-row: span 2;
+  background: rgb(71, 175, 39);
+  color: white;
+}
+
+.calculator .buttons span#equal {
+  grid-row: span 2;
+  background: rgb(56, 119, 255);
+  color: white;
+}
